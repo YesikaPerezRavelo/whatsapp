@@ -1,0 +1,31 @@
+<div class="box">
+  <label for="text-input">Mensaje en tiempo Real</label>
+  <input id="text-input" class="text-input" type="text" />
+  <hr />
+  <div id="show-text"></div>
+  <hr />
+  <label for="chat-message">Chat Grupal</label>
+  <input id="chat-message" class="chat-message" type="text" />
+  <button class="button-chat" onclick="send();">Enviar</button>
+  <hr />
+  <div id="all-messages"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+
+{{!-- <h1>Hola {{user.name}} {{user.lastName}}, bienvenida!</h1>
+{{#if isAdmin}}
+  <div>
+    {{#each food}}
+      <div>
+        <p>{{this.name}}</p>
+        <p>{{this.price}}</p>
+      </div>
+    {{/each}}
+  </div>
+{{else}}
+  <p>No tienes permisos para ver la lista de alimentos</p>
+{{/if}}
+
+<script src="/js/index.js"></script> --}}
